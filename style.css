@@ -10,7 +10,7 @@ body {
 /* Hero Header Styling */
 .hero-header {
     position: relative;
-    background: url('/Users/mogankumarnarsozhan/Portfolio/Images/cool-background.png') center/cover no-repeat;
+    background: url('https://github.com/Mogankumar/Portfolio/blob/main/Images/cool-background.png?raw=true') center/cover no-repeat;
     height: 100vh; /* Full-screen height */
     color: #fff;
     text-align: center;
