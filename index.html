@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mogankumar Narsozhan - Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="hero-header">
-        <div class="overlay"></div>
-        <div class="container">
-          <h1>I'm <span>Mogankumar Narsozhan</span></h1>
-          <p>A Graduate student in Computer Science | AI Enthusiast | Software engineer</p>
-          
-          <div class="social-icons">
-            <a href="https://github.com/Mogankumar" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt="GitHub">
-            </a>
-            <a href="https://leetcode.com/u/Mogankumar/" target="_blank">
-              <img src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-4-pack-logos-icons-2944960.png" alt="LeetCode">
-            </a>
-            <a href="https://www.linkedin.com/in/mogankumar-narsozhan/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="LinkedIn">
-            </a>
-          </div>
-        </div>
-      </header>
+  <canvas id="bg-canvas"></canvas>
+  <header class="hero-header">
+    <div class="container">
+      <h1 class="hero-title">
+        Mogankumar Narsozhan<br>
+        <span>AI/ML Engineer</span><br>
+      </h1>
+      <p class="hero-subtitle">
+        Building and deploying state-of-the-art ML systems at scale.<br>
+        Focused on LLMs, efficient neural architectures, and production MLOps.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-cyan">View Projects &rarr;</a>
+        <a href="#projects" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          Research Papers
+        </a>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://github.com/Mogankumar" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mogankumar-narsozhan/" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="#" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+            </path>
+          </svg>
+        </a>
+        <a href="#" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
 
   <nav>
     <ul>
@@ -39,21 +83,83 @@
     </ul>
   </nav>
 
-  <section id="about" class="about-section">
+  <section id="about" class="about-section modern-about">
     <div class="container">
-      <div class="about-content">
-        <div class="about-text">
-          <h2>Hey there!</h2>
-          <p>
-            I specialize in building solutions using Machine Learning, AI, and scalable system design. I aim to create innovative, reproducible, and impactful solutions that solve real-world challenges and contribute to the broader technology community. Currently pursuing my Master’s in Computer Science at the State University of New York at Buffalo, I have a strong focus on AI, data analytics, and software development.
-          </p>
-          <ul class="about-details">
-            <li><strong>Location:</strong> Buffalo, New York, USA</li>
-            <li><strong>Status:</strong> Available</li>
-          </ul>
+      <div class="section-tag">01 / ABOUT</div>
+      <h2 class="modern-about-title">Advancing the frontier of <span>applied ML</span></h2>
+
+      <div class="about-paragraphs">
+        <p>I'm an ML Engineer / Backend with 2 years shipping production systems solo, from distributed ingestion
+          pipelines to LLM-backed inference infrastructure. My work spans high-throughput async pipelines, semantic
+          search, vector databases, and RAG systems, all deployed at scale on AWS.</p>
+        <p>Previously a Founding ML Engineer at Kubby, where I owned the full backend lifecycle end-to-end —
+          architecture, deployment, and optimization. Before that, at Hewlett Packard Enterprise working on enterprise
+          NFV infrastructure.</p>
+        <p>I hold an M.S. in Computer Science (AI Track) from SUNY Buffalo and a B.Tech in Electrical and Electronics
+          Engineering from NIT Puducherry. I specialize in turning
+          complex data into scalable, impactful AI solutions for real-world challenges.</p>
+      </div>
+
+      <div class="about-buttons">
+        <a href="#" class="btn btn-outline-dark">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Resume / CV
+        </a>
+        <a href="https://github.com/Mogankumar" target="_blank" class="btn btn-outline-dark">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+            </path>
+          </svg>
+          GitHub
+        </a>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <svg class="icon-cyan" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+            <path d="M12 12L2.1 7.1"></path>
+            <path d="M12 12l9.9 4.9"></path>
+          </svg>
+          <h3>Machine Learning</h3>
+          <p>Training, fine-tuning, and deployment of predictive ML systems and neural networks.</p>
         </div>
-        <div class="about-image">
-          <img src="https://raw.githubusercontent.com/Mogankumar/Portfolio/refs/heads/main/Images/myself.JPG">
+        <div class="about-card">
+          <svg class="icon-cyan" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          <h3>Generative AI & RAG</h3>
+          <p>Engineering RAG-based assistants, vector DB integration, and semantic search optimization.</p>
+        </div>
+        <div class="about-card">
+          <svg class="icon-cyan" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          <h3>MLOps & Systems</h3>
+          <p>End-to-end pipelines, Docker, Openstack, and reducing end-to-end latency in production.</p>
+        </div>
+        <div class="about-card">
+          <svg class="icon-cyan" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <h3>Software Engineering</h3>
+          <p>Scalable system design, Python development, and translating unstructured data into insights.</p>
         </div>
       </div>
     </div>
@@ -63,26 +169,107 @@
     <div class="container">
       <h2>Specialization & Skills</h2>
       <p>AI solutions for real-world problems. Also well-versed in Software Development and Linux.</p>
-      <div class="specialization-grid">
-        <div class="specialization-item">
-          <img src="https://cdn-icons-png.flaticon.com/128/6819/6819644.png" alt="Machine Learning Icon">
-          <h3>Machine Learning</h3>
-          <p>Python(Numpy, Scikit learn, Pandas, TensorFlow, Keras) | ML Algorithms | Supervised/Unsupervised learning | Reinforcement learning | NN & CNN | Image processing | Object detection | Facial recognition</p>
-        </div>
-        <div class="specialization-item">
-          <img src="https://cdn-icons-png.flaticon.com/128/7991/7991055.png" alt="Computer Vision Icon">
-          <h3>Software Development</h3>
-          <p>Python3 programming language | MySQL | Data Structures and Algorithms</p>
-        </div>
-        <div class="specialization-item">
-          <img src="https://cdn-icons-png.flaticon.com/128/15465/15465695.png" alt="Cloud ML Icon">
-          <h3>Linux</h3>
-          <p>Linux/UNIX commands | Openstack(cloud) | Networking(TCP/IP) | Network Functions Virtualization</p>
-        </div>
-        <div class="specialization-item">
-          <img src="https://cdn-icons-png.flaticon.com/128/4744/4744315.png" alt="Software Development Icon">
-          <h3>Security</h3>
-          <p>NAGIOS | Hypervisors(VMware and Oracle VMbox) | Containers | Ubuntu</p>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Skill Items -->
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <h3>Python</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+            <h3>NumPy</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+            <h3>Pandas</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+            <h3>TensorFlow</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras">
+            <h3>Keras</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+            <h3>PyTorch</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
+            <h3>OpenCV</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+            <h3>MySQL</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+            <h3>Linux</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Ubuntu">
+            <h3>Ubuntu</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+            <h3>Docker</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+            <h3>AWS</h3>
+          </div>
+
+          <!-- Duplicated Skill Items for Infinite Scroll -->
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            <h3>Python</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+            <h3>NumPy</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+            <h3>Pandas</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+            <h3>TensorFlow</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras">
+            <h3>Keras</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+            <h3>PyTorch</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
+            <h3>OpenCV</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+            <h3>MySQL</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+            <h3>Linux</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Ubuntu">
+            <h3>Ubuntu</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+            <h3>Docker</h3>
+          </div>
+          <div class="specialization-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS">
+            <h3>AWS</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -92,17 +279,22 @@
     <div class="container">
       <h2>Education</h2>
       <div class="education-item">
-        <img src="https://nursing.buffalo.edu/content/nursing/about-us/about-the-university/jcr:content/par/image_0.img.1852.488.q65.jpg/1655302880400.jpg" alt="SUNY Buffalo" class="education-image">
+        <img
+          src="https://www.buffalo.edu/content/www/brand/resources-tools/style-guides/student-association/_jcr_content/par/image_2051576783.img.original.jpg/1516727792017.jpg"
+          alt="SUNY Buffalo" class="education-image">
         <div class="education-details">
           <h3>State University of New York at Buffalo, NY, USA</h3>
-          <p>Masters in Computer Science (AI Track) | 2024 - Present</p>
-          <p><strong>GPA:</strong> 3.583/4</p>
-          <p><strong>Completed courses: </strong>Introduction to Machine Learning, Data Intensive Computing, Algorithms Analysis and Design</p>
-          <p><strong>Current courses: </strong>Intro to Pattern Recognition, Deep learning, Operating systems, Data Modelling Query Language</p>
+          <p>Masters in Computer Science (AI Track) | Aug, 2024 - Dec, 2025</p>
+          <p><strong>GPA:</strong> 3.6/4</p>
+          <p><strong>Courses: </strong>Introduction to Machine Learning, Data Intensive Computing, Algorithms
+            Analysis and Design, Intro to Pattern Recognition, Deep learning, Operating systems, Data
+            Modelling Query Language, Computer Vision</p>
         </div>
       </div>
       <div class="education-item">
-        <img src="https://2024.icoftnitpy.com/wp-content/uploads/2024/06/nitpy-admin-scaled.jpg" alt="NIT Puducherry" class="education-image">
+        <img
+          src="https://img-cdn.publive.online/filters:format(webp)/hindi-betterindia/media/media_files/uploads/2021/02/NIT-Puducherry-1024x614.jpg"
+          alt="NIT Puducherry" class="education-image">
         <div class="education-details">
           <h3>National Institute of Technology, Puducherry, India</h3>
           <p>Bachelor of Technology, Electrical and Electronics Engineering | 2019 - 2023</p>
@@ -112,156 +304,324 @@
     </div>
   </section>
 
-    <section id="projects" class="projects-section">
-        <div class="container">
-          <h2>GitHub Projects</h2>
-          <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card fade-in-left">
-              <div class="card-header">
-                <h3>Reinforcement Learning</h3>
-                <p class="tech">Deep Learning</p>
-              </div>
-              <div class="project-content">
-                <img src="https://cdn-icons-png.flaticon.com/128/8637/8637091.png" alt="Reinforcement Learning">
-                <p>
-                  Implemented reinforcement learning techniques such as SARSA and Q-Learning to build a firefighter simulation environment for dynamic problem-solving.
-                </p>
-              </div>
-              <a href="https://github.com/Mogankumar/Reinforcement-Learning1" class="btn btn-primary" target="_blank">CODE</a>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-card fade-in-left">
-              <div class="card-header">
-                <h3>Virtual Mouse</h3>
-                <p class="tech">Object Detection</p>
-              </div>
-              <div class="project-content">
-                <img src="https://cdn-icons-png.flaticon.com/128/10328/10328775.png" alt="Virtual Mouse">
-                <p>
-                  A Python-based Virtual Mouse that uses hand gestures for cursor control, clicking, scrolling, and taking screenshots. Powered by OpenCV, PyAutoGUI, and MediaPipe for a touch-free experience.
-                </p>
-              </div>
-              <a href="https://github.com/Mogankumar/Virtual-mouse" class="btn btn-primary" target="_blank">CODE</a>
-            </div>
-            <!-- Project 3 -->
-            <div class="project-card fade-in-left">
-              <div class="card-header">
-                <h3>Bird Flock Simulation</h3>
-                <p class="tech">Big Data Analytics</p>
-              </div>
-              <div class="project-content">
-                <img src="https://github.com/Mogankumar/Portfolio/blob/main/Images/Bird%20Flock.png?raw=true" alt="Bird Flock Simulation">
-                <p>
-                  Designed and implemented a bird flock simulation using PySpark to model complex behaviors in distributed systems, showcasing the scalability of big data processing frameworks.
-                </p>
-              </div>
-              <a href="https://github.com/Mogankumar/Bird-Flock-Simulation-with-PySpark" class="btn btn-primary" target="_blank">CODE</a>
-            </div>
-            <!-- Project 4 -->
-            <div class="project-card fade-in-left">
-              <div class="card-header">
-                <h3>Face Recognition System</h3>
-                <p class="tech">Computer Vision</p>
-              </div>
-              <div class="project-content">
-                <img src="https://cdn-icons-png.flaticon.com/128/10479/10479750.png" alt="Face Recognition">
-                <p>
-                  Developed a facial recognition system using SVM and OpenCV for accurately identifying individuals from photographs. Included techniques for image preprocessing and feature extraction.
-                </p>
-              </div>
-              <a href="https://github.com/Mogankumar/Facial-Recognition" class="btn btn-primary" target="_blank">CODE</a>
-            </div>
-            <!-- Project 5-->
-            <div class="project-card fade-in-left">
-                <h3>Neural Networks & CNN</h3>
-                <p class="tech">Deep Learning</p>
-                <div class="project-content">
-                  <img src="https://cdn-icons-png.flaticon.com/128/2103/2103633.png" alt="Neural Networks & CNN">
-                  <p>
-                    This project focuses on building fully connected neural networks (NN) and convolutional neural networks (CNN).
-                  </p>
-                </div>
-                <a href="https://github.com/Mogankumar/Neural-Networks-and-CNN" class="btn btn-primary" target="_blank">CODE</a>
-              </div>
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>GitHub Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>Reinforcement Learning</h3>
+            <p class="tech">Deep Learning</p>
           </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/8637/8637091.png" alt="Reinforcement Learning">
+            <p>
+              Implemented reinforcement learning techniques such as SARSA and Q-Learning to build a firefighter
+              simulation environment for dynamic problem-solving.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/Reinforcement-Learning1" class="btn btn-primary"
+            target="_blank">CODE</a>
         </div>
-      </section>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>Virtual Mouse</h3>
+            <p class="tech">Object Detection</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/10328/10328775.png" alt="Virtual Mouse">
+            <p>
+              A Python-based Virtual Mouse that uses hand gestures for cursor control, clicking, scrolling, and taking
+              screenshots. Powered by OpenCV, PyAutoGUI, and MediaPipe for a touch-free experience.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/Virtual-mouse" class="btn btn-primary" target="_blank">CODE</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>Bird Flock Simulation</h3>
+            <p class="tech">Big Data Analytics</p>
+          </div>
+          <div class="project-content">
+            <img src="https://github.com/Mogankumar/Portfolio/blob/main/Images/Bird%20Flock.png?raw=true"
+              alt="Bird Flock Simulation">
+            <p>
+              Designed and implemented a bird flock simulation using PySpark to model complex behaviors in distributed
+              systems, showcasing the scalability of big data processing frameworks.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/Bird-Flock-Simulation-with-PySpark" class="btn btn-primary"
+            target="_blank">CODE</a>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>Face Recognition System</h3>
+            <p class="tech">Computer Vision</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/10479/10479750.png" alt="Face Recognition">
+            <p>
+              Developed a facial recognition system using SVM and OpenCV for accurately identifying individuals from
+              photographs. Included techniques for image preprocessing and feature extraction.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/Facial-Recognition" class="btn btn-primary" target="_blank">CODE</a>
+        </div>
+        <!-- Project 5-->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>Neural Networks & CNN</h3>
+            <p class="tech">Deep Learning</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/2103/2103633.png" alt="Neural Networks & CNN">
+            <p>
+              This project focuses on building fully connected neural networks (NN) and convolutional neural networks
+              (CNN).
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/Neural-Networks-and-CNN" class="btn btn-primary"
+            target="_blank">CODE</a>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>Self-Healing Technical Documentation</h3>
+            <p class="tech">Python</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/10435/10435128.png" alt="Self-Healing Documentation">
+            <p>
+              A documentation drift detection and repair system that lives inside the CI/CD pipeline, solving the
+              problem of temporal decay as code evolves continuously.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/Self-Healing-Technical-Documentation" class="btn btn-primary"
+            target="_blank">CODE</a>
+        </div>
+        <!-- Project 7 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>Semantic Caching Layer for LLM APIs</h3>
+            <p class="tech">Python</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/12554/12554030.png" alt="Semantic Caching Layer">
+            <p>
+              A middleware proxy service between applications and LLM providers that checks for semantically similar
+              past queries before sending expensive API requests.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/Semantic-Caching-Layer-for-LLM-API-s" class="btn btn-primary"
+            target="_blank">CODE</a>
+        </div>
+        <!-- Project 8 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>Autoencoders for Anomaly Detection</h3>
+            <p class="tech">Jupyter Notebook</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/8637/8637091.png" alt="Anomaly Detection">
+            <p>
+              Built an LSTM-based autoencoder for unsupervised anomaly detection on AWS EC2 CPU metrics, flagging
+              anomalies via reconstruction error spikes.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/Autoencoders-for-Anomaly-Detection" class="btn btn-primary"
+            target="_blank">CODE</a>
+        </div>
+        <!-- Project 9 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>Healthcare Simple RAG</h3>
+            <p class="tech">Jupyter Notebook</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/2966/2966327.png" alt="Healthcare Simple RAG">
+            <p>
+              Implemented a simple Retrieval-Augmented Generation (RAG) system tailored for healthcare applications to
+              provide context-aware responses.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/Healthcare-Simple-RAG" class="btn btn-primary" target="_blank">CODE</a>
+        </div>
+        <!-- Project 10 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>AI Sketch to UI Converter</h3>
+            <p class="tech">Deep Learning</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/10479/10479750.png" alt="Sketch to UI">
+            <p>
+              Converts hand-drawn UI sketches into functional HTML code. Integrates a custom YOLOv8 detector with a CNN
+              + Attention + Transformer + GRU pipeline.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/AI-Based-Sketch-to-UI-Converter" class="btn btn-primary"
+            target="_blank">CODE</a>
+        </div>
+        <!-- Project 11 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>UrbanTwinAI</h3>
+            <p class="tech">Streamlit</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/10328/10328775.png" alt="UrbanTwinAI">
+            <p>
+              An interactive digital twin platform for generative city simulation. Visualizes how urban design changes
+              impact traffic, heat distribution, and air quality using AI-driven simulations.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/UrbanTwinAI" class="btn btn-primary" target="_blank">CODE</a>
+        </div>
+        <!-- Project 12 -->
+        <div class="project-card">
+          <div class="card-header">
+            <h3>COVID-19 Classification</h3>
+            <p class="tech">Deep Learning</p>
+          </div>
+          <div class="project-content">
+            <img src="https://cdn-icons-png.flaticon.com/128/2966/2966327.png" alt="COVID-19 Classification">
+            <p>
+              Classifies chest X-ray images into Normal, COVID-19, and Viral Pneumonia using a two-layer CNN
+              architecture, demonstrating high accuracy.
+            </p>
+          </div>
+          <a href="https://github.com/Mogankumar/COVID-19-classification" class="btn btn-primary"
+            target="_blank">CODE</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section id="experience" class="experience-section">
-        <div class="container">
-          <h2>Work Experience</h2>
-          <div class="timeline">
-            <!-- Experience 1 -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>Hewlett Packard Enterprise</h3>
-                <p><strong>SVC Info Developer | Full-time | August 2023 - May 2024</strong></p>
-                <ul>
-                    <li>Assisted in creating RedHat Package Managers using Network Functions Virtualization Director (NFVD), HP Service Activator, and Workflow Designer and installed various versions, patch bundles, and hotfixes.</li>
-                    <li>Executed the migration of Samsung EnterpriseDB to PostgresDB.</li>
-                    <li><strong>Experience: </strong>Linux Commands, Openstack, Docker, Networking (TCP/IP)</li>
-                </ul>
-              </div>
-            </div>
-            <!-- Experience 2 -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>Hewlett Packard Enterprise</h3>
-                <p><strong>Cybersecurity Engineer | Internship | January - July 2023</strong></p>
-                <ul>
-                    <li>Performed Breach and Attack Simulation (BAS): a proactive security approach that tests the organization's security posture and fixes vulnerabilities by simulating real-world attacks.</li>
-                    <li>Monitored all the services, hosts, databases, and data centers, using NAGIOS XI, which are associated with a particular project, and resolved any issues that occurred</li>
-                    <li><strong>Experience: </strong>Hypervisors (Virtual Machines, VMWare), Docker, and Ubuntu.</li>
-                </ul>
-              </div>
-            </div>
-            <!-- Experience 3-->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                  <h3>Zebo.ai</h3>
-                  <p><strong>ML Intern | Internship | October - November 2022</strong></p>
-                  <ul>
-                    <li>An intermediate level of Python was studied for the training, testing, and cross-validation of data followed by the features and labels pickling, scaling, techniques, and Error Metrics.</li>
-                    <li>Implemented many Machine Learning algorithms.</li>
-                    <li><strong>Experience: </strong>Python, Machine Learning Algorithms, Data Structures.
-                  </ul>
-                </div>
-              </div>
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Kubby</h3>
+            <p><strong>Founding ML Engineer | San Francisco, CA (remote) | Feb 2026 – Present</strong></p>
+            <ul>
+              <li>Owned full end-to-end delivery of transformer-based predictive ML systems: scoped requirements,
+                designed evaluation frameworks measuring accuracy, latency, and business performance criteria, and drove
+                deployment to production, achieving sub-200ms inference latency across 50K+ product records.</li>
+              <li>Led structured model performance reviews with customers, directly influencing retention and expansion
+                decisions.</li>
+              <li>Owned the full delivery lifecycle: problem framing, evaluation design, production deployment, and
+                ongoing monitoring. Aligning customer engineering teams around reliable, observable outcomes.</li>
+            </ul>
           </div>
         </div>
-      </section>
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Kubby</h3>
+            <p><strong>AI/ML Engineer | San Francisco, CA (remote) | May 2025 – Dec 2025</strong></p>
+            <ul>
+              <li>Engineered a production RAG-based AI shopping assistant (12+ live sources) delivering context-aware
+                recommendations and semantic Q&A with sub-second response times.</li>
+              <li>Diagnosed a critical semantic search latency bottleneck through systematic performance analysis;
+                engineered a Redis precomputation solution with vector database integration that reduced end-to-end
+                pipeline latency by 75% (1.2s → 300ms), directly improving customer-facing product experience.</li>
+              <li>Built a transaction analytics engine translating unstructured behavioral signals into structured
+                business intelligence dashboards, supporting executive and customer stakeholder decision-making.</li>
+              <li>Reduced data ingestion latency 75% via SQS + ECS re-architecture; documented decisions to align
+                customer
+                engineering teams around reliable, observable delivery.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Hewlett Packard Enterprise</h3>
+            <p><strong>SVC Info Developer | Full-time | August 2023 - May 2024</strong></p>
+            <ul>
+              <li>Assisted in creating RedHat Package Managers using Network Functions Virtualization Director (NFVD),
+                HP Service Activator, and Workflow Designer and installed various versions, patch bundles, and hotfixes.
+              </li>
+              <li>Executed the migration of Samsung EnterpriseDB to PostgresDB.</li>
+              <li><strong>Experience: </strong>Linux Commands, Openstack, Docker, Networking (TCP/IP)</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Experience 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Hewlett Packard Enterprise</h3>
+            <p><strong>Cybersecurity Engineer | Internship | January - July 2023</strong></p>
+            <ul>
+              <li>Performed Breach and Attack Simulation (BAS): a proactive security approach that tests the
+                organization's security posture and fixes vulnerabilities by simulating real-world attacks.</li>
+              <li>Monitored all the services, hosts, databases, and data centers, using NAGIOS XI, which are associated
+                with a particular project, and resolved any issues that occurred</li>
+              <li><strong>Experience: </strong>Hypervisors (Virtual Machines, VMWare), Docker, and Ubuntu.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Experience 5-->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Zebo.ai</h3>
+            <p><strong>ML Intern | Internship | October - November 2022</strong></p>
+            <ul>
+              <li>An intermediate level of Python was studied for the training, testing, and cross-validation of data
+                followed by the features and labels pickling, scaling, techniques, and Error Metrics.</li>
+              <li>Implemented many Machine Learning algorithms.</li>
+              <li><strong>Experience: </strong>Python, Machine Learning Algorithms, Data Structures.
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section id="contact" class="contact-section">
-        <div class="container">
-          <h2>Contact Me</h2>
-          <p>If you'd like to collaborate or learn more about my work, feel free to reach out!</p>
-          <div class="contact-card">
-            <div class="contact-item">
-              <img src="https://cdn-icons-png.flaticon.com/128/7286/7286142.png" alt="Email Icon">
-              <div>
-                <h3>Email</h3>
-                <p><a href="mailto:mogankum@buffalo.edu">mogankum@buffalo.edu</a></p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn Icon">
-              <div>
-                <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/mogankumar-narsozhan/" target="_blank">Mogankumar Narsozhan</a></p>
-              </div>
-            </div>
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to collaborate or learn more about my work, feel free to reach out!</p>
+      <div class="contact-card">
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/7286/7286142.png" alt="Email Icon">
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:mogan.narsozhan@gmail.com">mogan.narsozhan@gmail.com</a></p>
           </div>
         </div>
-      </section>
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn Icon">
+          <div>
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/mogankumar-narsozhan/" target="_blank">Mogankumar Narsozhan</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Mogankumar Narsozhan | All rights reserved</p>
   </footer>
+
+  <!-- GSAP Core & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
